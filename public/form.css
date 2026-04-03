@@ -1,0 +1,66 @@
+can you also make the form responsive
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fffcf2;
+}
+
+h2 {
+    align-self: center;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: #252422;
+}
+
+form {  
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    color: #fffcf2;
+    background-color: #403d39;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+input {
+    width: 25rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid #fffcf2;
+}
+
+label {
+    width: 25rem;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+form button {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem 1rem;
+    background-color: #fffcf2;
+    color: #403d39;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}

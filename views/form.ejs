@@ -1,0 +1,24 @@
+<!-- form.ejs -->
+
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <h2>Add New Message To The Board</h2>
+        <form method="POST" action="/new">
+            <div class="form-group">
+                <label for="user">User:</label>
+                <input type="text" name="user" id="user" placeholder="John">
+            </div>
+
+            <div class="form-group">
+                <label for="text">Message:</label>
+                <input type="text" name="text" id="text" placeholder="Hii There!">
+            </div>
+
+            <button>Add Message</button>
+       </form>
+    </body>
+</html>

@@ -42,10 +42,11 @@ h1 span svg {
 }
 
 .main {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     padding: 1rem;
     margin: 1rem;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .message {
@@ -55,6 +56,7 @@ h1 span svg {
     border-radius: 1rem;
     padding: 2.5rem 3rem;
     line-height: 1.7;
+    flex: 1 1 500px;
 }
 
 .label {
