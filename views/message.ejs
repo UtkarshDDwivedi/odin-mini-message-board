@@ -1,0 +1,15 @@
+<!-- message.ejs -->
+
+<html>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/message.css">
+    </head>
+    <body>
+        <div class="message">
+            <p><span class="label">User:</span> <%= message.user%></p>
+            <p><span class="label">Text:</span> <%= message.text %></p>
+            <p><span class="label">Date Added:</span> <%= message.added.toLocaleDateString() %></p>
+        </div>
+    </body>
+</html>

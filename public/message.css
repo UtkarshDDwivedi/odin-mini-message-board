@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffcf2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    min-height: 100vh;
+}
+
+.message {
+    font-size: 3rem;
+    background-color: #403d39;
+    color: #fffcf2;
+    border-radius: 1rem;
+    padding: 2.5rem 3rem;
+    line-height: 1.7;
+}

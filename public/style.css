@@ -62,3 +62,7 @@ h1 span svg {
 .label {
     font-weight: bold;
 }
+
+a {
+    text-decoration: none;
+}

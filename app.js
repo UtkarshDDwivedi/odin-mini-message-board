@@ -16,12 +16,14 @@ messages = [
     {
         text: "Hi there!",
         user: "Amando",
-        added: new Date() 
+        added: new Date(), 
+        id: crypto.randomUUID()
     },
     {
         text: "Hello World!",
         user: "Charles",
-        added: new Date() 
+        added: new Date(),
+        id: crypto.randomUUID() 
     }
 ];
 
@@ -35,8 +37,19 @@ app.get('/new', (req, res) => {
 })
 
 app.post('/new', (req, res) => {
-    messages.push({text: req.body.text, user: req.body.user, added: new Date()});
+    messages.push({text: req.body.text, user: req.body.user, added: new Date(), id: crypto.randomUUID()});
     res.redirect('/');
+})
+
+app.get('/messages/:messageID', (req, res) => {
+    const {messageID} = req.params;
+    const message = messages.find(message => message.id == messageID);
+
+    if (!message) {
+        return res.status(404).send("Message not found");
+    }
+    
+    res.render("message", {title: "Mini Message Board", message: message});
 })
 
 app.listen(port, () => {
