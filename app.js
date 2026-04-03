@@ -1,8 +1,9 @@
 const express = require('express');
 const path = require('node:path');
+const crypto = require('node:crypto');
 
 const app = express();
-const port = 3000;
+const port = process.env.port || 3000;
 const assetPath = path.join(__dirname, "public");
 
 app.set("views", path.join(__dirname, "views"));
