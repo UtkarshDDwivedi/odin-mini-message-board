@@ -15,9 +15,9 @@
             <% messages.forEach(message => { %>
                 <a href="/messages/<%= message.id %>">
                     <div class="message">
-                        <p><span class="label">User:</span> <%- message.user%></p>
+                        <p><span class="label">User:</span> <%- message.username%></p>
                         <p><span class="label">Text:</span> <%- message.text %></p>
-                        <p><span class="label">Date Added:</span> <%- message.added.toLocaleDateString() %></p>
+                        <p><span class="label">Date Added:</span> <%- new Date(message.created_at).toLocaleString() %></p>
                     </div>
                 </a>
             <% }) %>
